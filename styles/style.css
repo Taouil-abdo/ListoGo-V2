@@ -1,0 +1,38 @@
+/* navbar Code */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 2rem;
+}
+#links-nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+}
+a:hover{
+    color: aquamarine;
+}
+
+button{
+    border: 1 solid #1DAEFF;
+    border-radius: 2rem;
+}
+
+/* hearo section */

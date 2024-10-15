@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            padding-top: 2rem;
+        }
+        #links-nav-ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 5rem;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            text-decoration: none;
+        }
+        a:hover{
+            color: aquamarine;
+        }
+
+        button{
+            border: 1 solid aquamarine;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header for makiing navbar -->
+
+    <header id="header">
+        <nav id="nav">
+            <div id="logo">
+                <img src="../image/Vector.png" style="height: 2rem; width: 2rem;" alt="logojpg">
+            </div>
+            <div id="links-nav">
+                <ul id="links-nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button><a href="login.html">logIn</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- end navbar -->
+
+    <!-- start form section -->
+    <section id="form-section">
+        
+        <div id="leftFormdiv">
+            <div>
+                <h2>Contact Us</h2>
+            </div>
+            <div>
+                <ul>
+                    <li><p>Youssoufia</p></li>
+                    <li><p>0678965478</p></li>
+                    <li><p>contact@gmail.com</p></li>
+                </ul>
+            </div>
+            <div id = "secial Media">
+                <img src="image/facebook.jpg" alt="">
+                <img src="image/tweeter.jpg" alt="">
+                <img src="image/instagram.jpg" alt="">
+            </div>
+        </div>
+        <div id="leftFormdiv">
+
+            <form action="">
+
+                <label for="Fullname">Fullname</label>
+                <input type="text"><br>
+                <label for="Email">Email</label>
+                <input type="text"><br>
+                <label for="phoneNumber">phoneNumber</label>
+                <input type="text"><br>
+                <label for="Message">Message</label>
+                <textarea type="text"></textarea><br>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+    </section>
+    <!-- end form section -->
+
+    <!-- end form section -->
+    <footer>
+        <div>
+            <div>
+                <img src="image/logo.jpg" alt="logojpg">
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

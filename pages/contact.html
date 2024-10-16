@@ -1,48 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #nav{
+        #form-section {
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-content: center;
-            padding-top: 2rem;
-        }
-        #links-nav-ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            gap: 5rem;
-        }
-        li{
-            list-style: none;
-        }
-        a{
-            color: black;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: medium;
-            text-decoration: none;
-        }
-        a:hover{
-            color: aquamarine;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6rem;
+            gap: 8rem;
+
         }
 
-        button{
-            border: 1 solid aquamarine;
-            border-radius: 2rem;
+        .formSection {
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+        }
+
+        #leftFormDiv {
+            width: 45%;
+            background-color: #fff;
+            padding: 1.25rem;
+            border-radius: 0.625rem;
+            box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Information Styles */
+        #leftFormDiv ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #leftFormDiv ul li {
+            margin-bottom: 0.625rem;
+        }
+
+        #socialMedia img {
+            width: 1.875rem;
+            margin-right: 0.625rem;
+        }
+
+        /* Form Styles */
+        form label {
+            display: block;
+            margin-top: 0.625rem;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 34rem;
+            height: 3.5rem;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 0.1rem solid #ccc;
+            border-radius: 1rem;
+        }
+
+        form button {
+            margin-top: 0.9375rem;
+            padding: 0.625rem 1.25rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 0.3125rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #218838;
+        }
+
+        /* hhhhhhhhhhhhhhhh */
+        .leftFormdiv,.rightFormdiv{
+            background: #1DA1F2;
+            border: 1px solid #218838;
+            border-radius: 1rem;
+            color: #fff;
+            height: 70vh;
+            width: 32vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .leftFormdiv li{
+            list-style: none;
+            font-size: xx-large;
+        }
+        .rightFormdiv{
+            background: #e9eaea !important;
+            color: #040404 !important;
+
         }
     </style>
 </head>
+
 <body>
 
     <!-- header for makiing navbar -->
@@ -66,58 +127,83 @@
 
     <!-- end navbar -->
 
+    <!-- /* starat conatact Us section */ -->
+
+    <section class="hero-section">
+
+        <div id="div-hero-section">
+            <div id="header-text">
+                <h1>Find your best <br> Real Estate</h1>
+                <p id="h1-home">Always upto date with our latest News and Articles</p>
+                <button style="height: 3rem;width: 11rem;">Contact Us</button>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* end conatact Us section */ -->
+
     <!-- start form section -->
     <section id="form-section">
-        
-        <div id="leftFormdiv">
-            <div>
-                <h2>Contact Us</h2>
+        <h1 style="font-size: 3rem;">Let’s start a conversation</h1>
+        <div class="formSection">
+
+            <!-- leftFormdiv -->
+            <div class="leftFormdiv">
+                <div>
+                    <h2>Contact Us</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <p style="font-size: medium;">Youssoufia</p>
+                        </li>
+                        <li>
+                            <p style="font-size: medium;">0678965478</p>
+                        </li>
+                        <li>
+                            <p style="font-size: medium;">contact@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="secial Media">
+                    <img src="image/facebook.jpg" alt="facebook">
+                    <img src="image/tweeter.jpg" alt="tweeter">
+                    <img src="image/instagram.jpg" alt="instagram">
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li><p>Youssoufia</p></li>
-                    <li><p>0678965478</p></li>
-                    <li><p>contact@gmail.com</p></li>
-                </ul>
+            <!-- leftFormdiv -->
+
+            <!-- rightFormdiv -->
+
+            <div class="rightFormdiv">
+
+                <form>
+
+                    <label for="Fullname">Fullname</label>
+                    <input type="text"><br>
+                    <label for="Email">Email</label>
+                    <input type="text"><br>
+                    <label for="phoneNumber">phoneNumber</label>
+                    <input type="text"><br>
+                    <label for="Message">Message</label>
+                    <textarea type="text"></textarea><br>
+                    <button>Send</button>
+
+                </form>
+
             </div>
-            <div id = "secial Media">
-                <img src="image/facebook.jpg" alt="">
-                <img src="image/tweeter.jpg" alt="">
-                <img src="image/instagram.jpg" alt="">
-            </div>
+            <!-- rightFormdiv -->
         </div>
-        <div id="leftFormdiv">
 
-            <form action="">
 
-                <label for="Fullname">Fullname</label>
-                <input type="text"><br>
-                <label for="Email">Email</label>
-                <input type="text"><br>
-                <label for="phoneNumber">phoneNumber</label>
-                <input type="text"><br>
-                <label for="Message">Message</label>
-                <textarea type="text"></textarea><br>
-                <button>Send</button>
-
-            </form>
-
-        </div>
     </section>
     <!-- end form section -->
 
     <!-- end form section -->
-    <footer>
-        <div>
-            <div>
-                <img src="image/logo.jpg" alt="logojpg">
-            </div>
-            <div>
 
-            </div>
 
-        </div>
-    </footer>
-    
 </body>
+
 </html>

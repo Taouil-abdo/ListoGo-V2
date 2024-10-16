@@ -7,23 +7,44 @@
     <title>Document</title>
 
     <style>
-        .header {
-            background: gray;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+        *{
+          margin: 0px;
+          padding: 0px;
         }
-
-        #nav {
+        #header{
+        background: rgb(255, 255, 255);
+         }
+        #nav{
+            margin:2rem;
             display: flex;
-            flex-direction: row;
+            justify-items: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #links-nav #links-nav-ul{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            gap: 4rem;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: black;
+
+        }
+        button{
+            height: 2rem;
+            width: 5rem;
+            border: 1px solid #1DA1F2;
+            border-radius: 10px;
+            background-color: rgb(253, 253, 253);
         }
 
         .hero-section {
-            background: gray;
-        }
-
-        .blog-section {
             background: gray;
         }
 

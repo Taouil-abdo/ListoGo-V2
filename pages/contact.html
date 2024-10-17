@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet"href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
 
     <style>
+        p{
+            color: gray;
+        }
         #form-section {
             display: flex;
             flex-direction: column;
@@ -20,11 +25,11 @@
 
         .formSection {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             gap: 0.2rem;
         }
 
-        #leftFormDiv {
+        #leftFormdiv {
             width: 45%;
             background-color: #fff;
             padding: 1.25rem;
@@ -35,71 +40,78 @@
         /* Contact Information Styles */
         #leftFormDiv ul {
             list-style-type: none;
-            padding: 0;
-        }
-
-        #leftFormDiv ul li {
-            margin-bottom: 0.625rem;
         }
 
         #socialMedia img {
-            width: 1.875rem;
+            width: 1rem;
             margin-right: 0.625rem;
         }
 
         /* Form Styles */
         form label {
             display: block;
-            margin-top: 0.625rem;
-            font-weight: bold;
+            margin-top: 2rem;
+            font-size: medium;
         }
 
         form input[type="text"],
         form textarea {
-            width: 34rem;
+            width: 23vw;
             height: 3.5rem;
             padding: 0.5rem;
             margin-top: 0.5rem;
             border: 0.1rem solid #ccc;
             border-radius: 1rem;
-        }
-
-        form button {
-            margin-top: 0.9375rem;
-            padding: 0.625rem 1.25rem;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 0.3125rem;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #218838;
+            background: #f2f2f2;
         }
 
         /* hhhhhhhhhhhhhhhh */
-        .leftFormdiv,.rightFormdiv{
-            background: #1DA1F2;
-            border: 1px solid #218838;
+
+        .leftFormdiv{
+            background: #50afea;
+            border: 1px solid #eeeeee;
             border-radius: 1rem;
             color: #fff;
-            height: 70vh;
-            width: 32vw;
+            height: 80vh;
+            width: 28vw;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
-
         }
         .leftFormdiv li{
             list-style: none;
-            font-size: xx-large;
+            font-size: x-large;
         }
         .rightFormdiv{
-            background: #e9eaea !important;
+            background: #fbfcfc !important;
             color: #040404 !important;
-
+            border: 1px solid #eeeeee;
+            border-radius: 1rem;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 27vw;
+        }
+        
+        #buttonContact{
+            height: 5vh;
+            width: 24vw;
+            border: #1DA1F2;
+            margin-top: 0.5rem;
+            padding: 0.6rem 1.25rem;
+            background-color: none;
+            color: #040404;
+            border: 1px solid #2d9aed;
+            border-radius: 0.3125rem;
+            cursor: pointer;
+            
+        }
+        .contact-form #buttonContact:hover {
+            background-color: #2d9aed;
+            color: #040404;
         }
     </style>
 </head>
@@ -152,25 +164,26 @@
             <!-- leftFormdiv -->
             <div class="leftFormdiv">
                 <div>
-                    <h2>Contact Us</h2>
+                    <h2 style="font-size: x-large;">Contact Us</h2>
                 </div>
                 <div>
                     <ul>
                         <li>
-                            <p style="font-size: medium;">Youssoufia</p>
+                            <h3 style="font-size: 16px;">Address: 198 West 21th Street,<br>
+                                 Suite 721 New York NY 10016</h3>
                         </li>
                         <li>
-                            <p style="font-size: medium;">0678965478</p>
+                            <h3 style="font-size: 20px;">Phone: + 1235 2355 98</h3>
                         </li>
                         <li>
-                            <p style="font-size: medium;">contact@gmail.com</p>
+                            <h3 style="font-size: 20px;">Email: info@yoursite.com</h3>
                         </li>
                     </ul>
                 </div>
-                <div id="secial Media">
-                    <img src="image/facebook.jpg" alt="facebook">
-                    <img src="image/tweeter.jpg" alt="tweeter">
-                    <img src="image/instagram.jpg" alt="instagram">
+                <div id="Social-Media">
+                    <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
             <!-- leftFormdiv -->
@@ -179,30 +192,82 @@
 
             <div class="rightFormdiv">
 
-                <form>
-
+                <form class="contact-form">
                     <label for="Fullname">Fullname</label>
-                    <input type="text"><br>
+                    <input type="text" name="Fullname"><br>
                     <label for="Email">Email</label>
-                    <input type="text"><br>
+                    <input type="text" name="Email"><br>
                     <label for="phoneNumber">phoneNumber</label>
-                    <input type="text"><br>
+                    <input type="text" name="phoneNumber"><br>
                     <label for="Message">Message</label>
-                    <textarea type="text"></textarea><br>
-                    <button>Send</button>
-
+                    <textarea type="text" name="Message"></textarea><br>
+                    <button type="button" id="buttonContact" onclick="buttonContact()">Send</button>
                 </form>
 
             </div>
             <!-- rightFormdiv -->
         </div>
-
-
     </section>
     <!-- end form section -->
 
-    <!-- end form section -->
-
+<!-- footer section -->
+    <!-- start footer section -->
+    <footer id="footer" class="footer-section"> 
+        <!-- left footer Sided -->
+        <div class="leftfooterSided">
+                <img src="../image/Vector.png" alt="logo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. 
+                </p>
+            <!-- Social Media links -->
+            <div id="Social-Media">
+                    <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#linkdin"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <!-- end left footer Sided -->
+    
+        <!-- start medll footer Sided -->
+    
+       <div class="medllfooterSided-left">
+                        <h3>Take a tour</h3>
+                <ul>
+                    <li>Features</li>
+                    <li>Partners</li>
+                    <li>Pricing</li>
+                    <li>Product</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+    
+        <div class="medllfooterSided-right">
+            <h3>Our Company</h3>
+                <ul>
+                    <li>Our Company</li>
+                    <li>About Us</li>
+                    <li>Agents</li>
+                    <li>Blog</li>
+                    <li>Media</li>
+                    <li>Contact Us</li>
+                </ul>
+        </div> 
+        <!-- end medll footer Sided -->
+        <!-- start right footer Sided -->
+        <div class="rightfooterSided">
+                <h3>Subscribe</h3>
+                <form class ="footerform" action="" >
+                  <div class="email" style="display: flex;flex-direction: row;">
+                    <input type="email" placeholder="Email">
+                  </div>
+                </form>
+        </div>
+        <!-- end right footer Sided -->
+    
+        </footer>
+        <!--end footer section-->
 
 </body>
 

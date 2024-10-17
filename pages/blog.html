@@ -4,76 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+
     <title>Document</title>
 
     <style>
-        *{
-          margin: 0px;
-          padding: 0px;
-        }
-        #header{
-        background: rgb(255, 255, 255);
-         }
-        #nav{
-            margin:2rem;
-            display: flex;
-            justify-items: center;
-            justify-content: space-around;
-            align-items: center;
-        }
-        #links-nav #links-nav-ul{
-            display: flex;
-            justify-items: center;
-            align-items: center;
-            gap: 4rem;
-            text-decoration: none;
-            list-style: none;
-
-        }
-        a{
-            text-decoration: none;
-            list-style: none;
-            color: black;
-
-        }
-        button{
-            height: 2rem;
-            width: 5rem;
-            border: 1px solid #1DA1F2;
-            border-radius: 10px;
-            background-color: rgb(253, 253, 253);
-        }
-
-        .hero-section {
-            background: gray;
-        }
-
         .blog-section {
-            background: gray;
-        }
 
-        #logo {
-            height: 2rem;
-            width: 2rem;
-        }
+            height: 73vh;
+            width: 25vw;
+            background: antiquewhite;
+            border: 1px solid greenyellow;
+            border-radius: 3rem;
+            margin-top: 72px;
+            padding: 10px;
 
-        #div-hero-section {
-            background: #c4e0eb;
-            background-image: url(../image/Mask\ Group.png);
-            position: relative;
-            height: 24rem;
-            width: 72rem;
-            left: 3rem;
-            border-radius: 2rem;
 
         }
 
-        #hero-section {
-            position: relative;
-            top: 6rem;
-            left: 7rem;
+        .cart-blog {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            gap: 20px;
+        }
+
+        img {
+            
+
+    height: 20rem;
+    width: 30.7rem;
+    border: 10px;
+    margin-left: -10px;
+    margin-top: -8px;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -105,19 +73,20 @@
     </section>
     <!-- end section hero-->
     <!-- start-->
-    <section class="blog-section">
-        <div>
-            <h2>Blog</h2>
-            <p>Guides and tips to help you launch your new thing.</p>
-            <div>
-                <div>
-                    <img src="house.png" alt="house">
+    <section class="blog">
+        <h2>Blog</h2>
+        <p>Guides and tips to help you launch your new thing.</p>
+        <div class="blog-section">
+            <div class="div-cart-blog">
+                <div class="cart-blog">
+                    <img src="../image/house.png" alt="house">
 
                     <h4>Website vs Blog: The Beginner’s Guide
-                        [+ 2024 Examples]</h4>
+                        <br>[+ 2024 Examples]
+                    </h4>
                     <p>
-                        I didn't know the difference between a website
-                        and a blog when I started and made a mistake.
+                        I didn't know the difference between a website <br>
+                        and a blog when I started and made a mistake.<br>
                         Read this, so you don't repeat something similar.
                     </p>
                     <button class="button-All">Read More</button>
@@ -134,16 +103,13 @@
     <footer id="footer" class="footer-section">
         <!-- left footer Sided -->
         <div class="leftfooterSided">
-            <img src="logo.png" alt="logo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <img src="../image/Vector.png" alt="logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
                 sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+                magna aliqua.
             </p>
-
             <!-- Social Media links -->
-            <div id="Social Media">
+            <div id="Social-Media">
                 <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -155,8 +121,8 @@
         <!-- start medll footer Sided -->
 
         <div class="medllfooterSided-left">
+            <h3>Take a tour</h3>
             <ul>
-                <li>Take a tour</li>
                 <li>Features</li>
                 <li>Partners</li>
                 <li>Pricing</li>
@@ -166,6 +132,7 @@
         </div>
 
         <div class="medllfooterSided-right">
+            <h3>Our Company</h3>
             <ul>
                 <li>Our Company</li>
                 <li>About Us</li>
@@ -173,16 +140,16 @@
                 <li>Blog</li>
                 <li>Media</li>
                 <li>Contact Us</li>
-
             </ul>
         </div>
         <!-- end medll footer Sided -->
         <!-- start right footer Sided -->
         <div class="rightfooterSided">
             <h3>Subscribe</h3>
-            <form action="">
-                <input type="email" placeholder="Email">
-                <button>send</button>
+            <form class="footerform" action="">
+                <div class="email" style="display: flex;flex-direction: row;">
+                    <input type="email" placeholder="Email">
+                </div>
             </form>
         </div>
         <!-- end right footer Sided -->

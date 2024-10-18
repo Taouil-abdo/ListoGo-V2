@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet"href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+<style>
+
+
+</style>
 </head>
 
 <body>
@@ -22,7 +26,7 @@
                     <li><a href="pages/propertie.html">Properties</a></li>
                     <li><a href="pages/blog.html">Blog</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
-                    <li><button><a href="pages/login.html">logIn</a></button></li>
+                    <li><button class="button-login"><a href="pages/login.html">logIn</a></button></li>
                 </ul>
             </div>
         </nav>
@@ -87,7 +91,7 @@
 
             </div>
         </div>
-    </section>
+    </section> 
     <!-- end section hero-->
 
     <!-- start countries images hero-->
@@ -96,73 +100,69 @@
             <h3 style="font-size: x-large;">We are available in many <br>
                 well-known countries</h3>
             <div class="contry-images">
-                <div>
-                    <img class="images" src="image/usa.png" alt="la tourefele">
-                    <h3 id="#h1-home" class="text-image">USA</h3>
+                <div class="images">
+                    <img  src="image/usa.png" alt="la tourefele">
+                    <h3 class="text-image" class="text-image">USA</h3>
                 </div>
-                <div>
+                <div class="images">
                     <img class="images" src="image/franceimg.png" alt="la tourefele">
                     <h3 class="text-image">France</h3>
                 </div>
-                <div>
+                <div class="images">
                     <img class="images" src="image/spain.png" alt="la tourefele">
                     <h3 class="text-image">spain</h3>
                 </div>
-                <div>
+                <div class="images">
                     <img class="images" src="image/uk.png" alt="la tourefele">
                     <h3 class="text-image">Uk</h3>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- end section hero-->
 
     <!-- /* start Recently Added section */ -->
     <section id="recently-add-section">
         <div class="recently-add-div">
-            <h3 style="font-size: x-large;">Recently Added</h3>
+            <div class="recently-add-title">
+                <h3 style="font-size: x-large;">Recently Added</h3>
+                    <a href="#">See All</a>
+            </div>
             <div class="cart-container">
-                
-                <!-- cart 1 -->
                 <div class="cart">
-                    <div class="cart-recently-add">
                         <img class="cart-recently-add" src="image/Rectangle 7 (1).png" alt="la tourefele">
-                    </div>
                     <div class="div-cart-text">
-                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
-                            Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
+                        <h3>103/143 West Street,<br>
+                            Crows Nest</h3>
+                        <div class="div-cart-text1" >
+                            <p class="car-span">10 Bedroom</p>
+                            <p class="car-span">150 M</p>
+                            <p class="car-span">2 Garage</p>
                         </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
+                        <div class="div-cart-text2">
+                            <p class="car-span">Posted by X Builder</p>
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
                 </div>
-                <!-- cart 3 -->
                 <div class="cart">
-                    <div class="cart-recently-add">
                         <img class="cart-recently-add" src="image/Rectangle 7 (2).png" alt="la tourefele">
-                    </div>
                     <div class="div-cart-text">
-                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
-                            Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
+                        <h3>103/143 West Street,<br>
+                            Crows Nest</h3>
+                        <div class="div-cart-text1" >
+                            <p class="car-span">10 Bedroom</p>
+                            <p class="car-span">150 M</p>
+                            <p class="car-span">2 Garage</p>
                         </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
+                        <div class="div-cart-text2">
+                            <p class="car-span">Posted by X Builder</p>
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
                 </div>
-                <!-- cart 3 -->
-                <div class="cart">
+                
+               <div class="cart">
                     <div class="cart-recently-add">
                         <img class="cart-recently-add" src="image/Rectangle 7 (3).png" alt="la tourefele">
                     </div>
@@ -179,7 +179,7 @@
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
-                </div><!-- cart 3 -->
+                </div>
                 <div class="cart">
                     <div class="cart-recently-add">
                         <img class="cart-recently-add" src="image/Rectangle 7 (4).png" alt="la tourefele">
@@ -197,7 +197,7 @@
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
-                </div><!-- cart 3 -->
+                </div>
                 <div class="cart">
                     <div class="cart-recently-add">
                         <img class="cart-recently-add" src="image/Rectangle 7 (5).png" alt="la tourefele">
@@ -215,7 +215,7 @@
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
-                </div><!-- cart 3 -->
+                </div>
                 <div class="cart">
                     <div class="cart-recently-add">
                         <img class="cart-recently-add" src="image/Rectangle 7 (1).png" alt="la tourefele">
@@ -233,13 +233,10 @@
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
-                </div>
-
-
-
+                </div> 
             </div>
         </div>
-    </section>
+    </section> 
     <!-- /* end Recently Added section */ -->
 
     <!-- /* starat conatact Us section */ -->
@@ -250,7 +247,7 @@
             <div id="header-text">
                 <h1>Find your best <br> Real Estate</h1>
                 <p id="h1-home">Always upto date with our latest News and Articles</p>
-                <button style="height: 3rem;width: 11rem;">Contact Us</button>
+                <button class="button-login">Contact Us</button>
             </div>
             <div>
             </div>

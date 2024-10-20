@@ -1,20 +1,24 @@
 /* navbar Code */
-html{
+html {
     font-size: 10px;
 }
+
 * {
     margin: 0px;
     padding: 0px;
 }
-h1{
+
+h1 {
     font-size: 5rem;
 }
+
 #header {
-    background: rgb(255, 255, 255);
+    background: rgb(238, 20, 20);
+
 }
 
 #nav {
-    margin: 2rem;
+    margin: 8rem;
     display: flex;
     justify-items: center;
     justify-content: space-around;
@@ -46,20 +50,70 @@ button {
     background-color: rgb(253, 253, 253);
 }
 
+#berger-menu-y,
+#berger-menu-x {
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    background: rgb(127, 198, 245);
+}
+
+#berger-menu-x {
+    display: none;
+}
+
+#berger-menu-y {
+    display: none;
+}
+
+/* media-queris */
+@media screen and (max-width : 655px) {
+    #nav {
+        flex-direction: column;
+        font-size: xx-large;
+        padding-top: 3rem;
+        gap: 12rem;
+        margin: 0px;
+
+    }
+
+    #links-nav,
+    #links-nav-ul {
+        flex-direction: column;
+        display: flex;
+
+    }
+
+    #logo {
+        display: flex;
+        gap: 28rem;
+    }
+
+    /* button{
+        height: 4rem;
+        width: 10rem;
+        border: 1px solid #1DA1F2;
+        border-radius: 10px;
+        background-color: rgb(253, 253, 253);
+        margin-bottom: 2rem;
+    } */
+    #berger-menu-y {
+        display: inline !important;
+    }
+}
+
 /* end header navebar  */
 
 /* hero section  */
 
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 6rem;
 }
-
-
 
 #div-hero-section {
     background-image: url(../image/Banner\ Image.png);
@@ -80,7 +134,8 @@ button {
     margin-left: 7rem;
     gap: 20px;
 }
-.button-select{
+
+.button-select {
     margin-left: 5rem;
 }
 
@@ -88,16 +143,13 @@ button {
     font-size: 1.5rem;
 }
 
-/* hero section  */
-
-
- /* .hero-section */
- .hero-section-buttons {
+/* .hero-section */
+.hero-section-buttons {
     border-color: aliceblue;
     width: 6vw;
     height: 6vh;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
 
@@ -111,7 +163,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 60vw;
+    /* width: 60vw; */
     border-radius: 0rem 1rem 1rem 1rem;
     margin-left: 50px;
 
@@ -122,7 +174,7 @@ button {
     flex-direction: row;
     align-items: flex-start;
     gap: 5rem;
-    height: 15vh;
+    /* height: 15vh; */
     margin-left: 2.4rem;
 
 }
@@ -152,6 +204,78 @@ button {
     -moz-appearance: none;
     border-right: 0.4px solid gray;
 }
+
+/* media-querie */
+@media screen and (max-width : 655px) {
+
+    .section-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0rem;
+
+
+    }
+
+    .location-select {
+        width: 24rem;
+        background: none;
+        color: rgb(71, 71, 71);
+        outline: none;
+
+    }
+
+    #header-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-top: 16rem;
+        margin-left: 2rem;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .button-select {
+        margin-left: 0rem;
+    }
+
+    .button-select-div {
+        padding-left: 4rem;
+    }
+
+    .hero-section-buttons {
+        border-color: aliceblue;
+        width: 7rem;
+        height: 4rem;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #buy-info-id {
+        background: rgb(251, 250, 250);
+        /* opacity: 0.8; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 27rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+        margin-left: 26px;
+    }
+
+    #div-hero-section {
+        
+        background-repeat: no-repeat;
+        /* height: 50rem; */
+        width: 32rem;
+        border-top-right-radius: 4rem;
+        border-bottom-right-radius: 14rem;
+    }
+
+}
+
+/* hero section  */
 
 /* contries section */
 
@@ -186,7 +310,7 @@ button {
 
 /* start Recently Added section */
 .cart-recently-add {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -229,10 +353,12 @@ button {
     gap: 2rem;
 
 }
-.cart:hover{
+
+.cart:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.price-button{
+
+.price-button {
     height: 4rem;
     width: 9rem;
 }
@@ -242,9 +368,9 @@ button {
 
 /* blog */
 
-.blog{
+.blog {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: large;
@@ -256,47 +382,53 @@ button {
 
 
 /* footer */
-.footer-section{
+.footer-section {
     margin-top: 11rem;
     height: 27rem;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     font-size: medium;
 }
-.leftfooterSided{
+
+.leftfooterSided {
 
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-around;
     align-items: start;
     gap: 1rem;
     padding: 1rem;
 
 }
-.rightfooterSided{
 
-display: flex;
-flex-direction: column;
-gap: 2rem;
+.rightfooterSided {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.Social-Media{
-   font-size: larger;
+.Social-Media {
+    font-size: larger;
 }
-li{
+
+li {
     list-style: none;
     padding-top: 2rem;
 }
-.footerform ,input{
+
+.footerform,
+input {
     height: 3rem;
     width: 20rem;
     border: 1px solid gray;
     border-radius: 10px;
 }
-p{
-color: rgb(141, 141, 141);
+
+p {
+    color: rgb(141, 141, 141);
 }
-   
+
 /* end footer */

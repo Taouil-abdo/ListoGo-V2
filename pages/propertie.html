@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>properties</title>
 </head>
 
 <body>
@@ -13,7 +15,10 @@
     <header id="header">
         <nav id="nav">
             <div id="logo">
-                <img src="../image/Vector.png" style="height: 2rem; width: 2rem;" alt="logojpg">
+                <img class="logo" src="../image/logo-listoGo.png" alt="logojpg">
+                <button id="berger-menu-x"><i class="fa-solid fa-xmark"></i>
+                </button>
+                <button id="berger-menu-y" type="button"><i class="fa-solid fa-bars"></i></button>
             </div>
             <div id="links-nav">
                 <ul id="links-nav-ul">
@@ -21,12 +26,11 @@
                     <li><a href="propertie.html">Properties</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><button><a href="login.html">logIn</a></button></li>
+                    <li><button class="button-login"><a href="login.html">logIn</a></button></li>
                 </ul>
             </div>
         </nav>
     </header>
-
 
     <section class="hero-section">
 
@@ -34,33 +38,128 @@
             <div id="header-text">
                 <h1>Find your best <br> Real Estate</h1>
                 <p id="h1-home">Always upto date with our latest News and Articles</p>
-                <button style="height: 3rem;width: 11rem;">Contact Us</button>
+                <button class="button-login">Proprties</button>
             </div>
             <div>
             </div>
         </div>
     </section>
 
-    <section id="recently-add-section">
-        <div class="recently-add-div">
+    <!-- /* start Recently Added section */ -->
+    <section id="section-recently-add">
+        <div class="div-recently-add">
             <h3 style="font-size: x-large;">Recently Added</h3>
-            <div class="cart-container">
-
+            <div class="card-container">
                 <!-- cart 1 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (1).png" alt="la tourefele">
+                <div class="card">
+                    <div class="">
+                        <img src="/image/Rectangle 7 (1).png" alt="la tourefele">
                     </div>
-                    <div class="div-cart-text">
-                        <h2>103/143 West Street,<br>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
                             Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
                         </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
+                            <button class="price-button">$45,545</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart 2 -->
+                <div class="card">
+                    <div class="">
+                        <img src="/image/Rectangle 7 (2).png" alt="la tourefele">
+                    </div>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
+                            Crows Nest</h2>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
+                            <button class="price-button">$45,545</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart 3 -->
+                <div class="card">
+                    <div class="">
+                        <img src="/image/Rectangle 7 (3).png" alt="la tourefele">
+                    </div>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
+                            Crows Nest</h2>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
+                            <button class="price-button">$45,545</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="">
+                        <img src="/image/Rectangle 7 (4).png" alt="la tourefele">
+                    </div>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
+                            Crows Nest</h2>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
+                            <button class="price-button">$45,545</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card">
+                    <div class="">
+                        <img src="/image/Rectangle 7 (4).png" alt="la tourefele">
+                    </div>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
+                            Crows Nest</h2>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
+                            <button class="price-button">$45,545</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card">
+                    <div class="">
+                        <img src="/image/Rectangle 7 (4).png" alt="la tourefele">
+                    </div>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
+                            Crows Nest</h2>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
@@ -68,64 +167,70 @@
             </div>
         </div>
     </section>
-<!-- footer section -->
+    <!-- /* end Recently Added section */ -->
+
+ <!-- footer section -->
     <!-- start footer section -->
-    <footer id="footer" class="footer-section"> 
+    <footer id="footer" class="footer-section">
         <!-- left footer Sided -->
         <div class="leftfooterSided">
-                <img src="../image/Vector.png" alt="logo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. 
-                </p>
+            <img class="logo" src="../image/logo-listoGo.png" alt="logojpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+            </p>
             <!-- Social Media links -->
             <div id="Social-Media">
-                    <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#linkdin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#facebook"><img src="/image/Facebook - Original.png" alt="Facebook"></a>
+                <a href="#x-twitter"><img src="/image/Twitter - Original.png" alt="Twitter"></a>
+                <a href="#instagram"><img src="/image/Instagram - Original.png" alt="Instagram"></a>
+                <a href="#linkdin"><img src="/image/LinkedIn - Original.png" alt="LinkedIn"></a>
             </div>
+            <p>© 2024.. All rights reserved.</p>
         </div>
         <!-- end left footer Sided -->
-    
+
         <!-- start medll footer Sided -->
-    
-       <div class="medllfooterSided-left">
-                        <h3>Take a tour</h3>
-                <ul>
-                    <li>Features</li>
-                    <li>Partners</li>
-                    <li>Pricing</li>
-                    <li>Product</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-    
+
+        <div class="medllfooterSided-left">
+            <h3>Take a tour</h3>
+            <ul>
+                <li>Features</li>
+                <li>Partners</li>
+                <li>Pricing</li>
+                <li>Product</li>
+                <li>Support</li>
+            </ul>
+        </div>
+
         <div class="medllfooterSided-right">
             <h3>Our Company</h3>
-                <ul>
-                    <li>Our Company</li>
-                    <li>About Us</li>
-                    <li>Agents</li>
-                    <li>Blog</li>
-                    <li>Media</li>
-                    <li>Contact Us</li>
-                </ul>
-        </div> 
+            <ul>
+                <li>Our Company</li>
+                <li>About Us</li>
+                <li>Agents</li>
+                <li>Blog</li>
+                <li>Media</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
         <!-- end medll footer Sided -->
         <!-- start right footer Sided -->
         <div class="rightfooterSided">
-                <h3>Subscribe</h3>
-                <form class ="footerform" action="" >
-                  <div class="email" style="display: flex;flex-direction: row;">
+            <h3>Subscribe</h3>
+            <p>Subscribe to get latest property, blog news from us</p>
+            <form class="footerform" action="">
+                <div class="email" style="display: flex;flex-direction: row;">
                     <input type="email" placeholder="Email">
-                  </div>
-                </form>
+                </div>
+            </form>
         </div>
         <!-- end right footer Sided -->
-    
-        </footer>
-        <!--end footer section-->
+
+    </footer>
+    <!--end footer section-->
+    <script src="script/script.js"></script>
+
 </body>
 
 </html>

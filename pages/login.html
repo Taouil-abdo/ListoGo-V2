@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="../styles/style.css">
 
-    <div>
-        <form action="">
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text">
+</head>
+
+<body class="body">
+    <div class="center">
+        <h1> Welcome</h1>
+        <form method="post">
+
+            <div class="txt_field">
+                <input type="text" required>
+                <span> </span>
+                <label>Email Address </label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" required>
+                <span> </span>
+                <label> Password </label>
+            </div>
+
+            <div class="forgot"> Forgot Password </div>
+            <input type="submit" value="Login">
+            <div class="users_signup">
+                Don't have an account? <a href="#">SignUp</a>
+            </div>
         </form>
     </div>
 </body>
+
 </html>

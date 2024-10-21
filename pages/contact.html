@@ -4,116 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>contact</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet"href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-
-
-    <style>
-        p{
-            color: gray;
-        }
-        #form-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 6rem;
-            gap: 8rem;
-
-        }
-
-        .formSection {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.2rem;
-        }
-
-        #leftFormdiv {
-            width: 45%;
-            background-color: #fff;
-            padding: 1.25rem;
-            border-radius: 0.625rem;
-            box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-        }
-
-        /* Contact Information Styles */
-        #leftFormDiv ul {
-            list-style-type: none;
-        }
-
-        #socialMedia img {
-            width: 1rem;
-            margin-right: 0.625rem;
-        }
-
-        /* Form Styles */
-        form label {
-            display: block;
-            margin-top: 2rem;
-            font-size: medium;
-        }
-
-        form input[type="text"],
-        form textarea {
-            width: 23vw;
-            height: 3.5rem;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border: 0.1rem solid #ccc;
-            border-radius: 1rem;
-            background: #f2f2f2;
-        }
-
-        /* hhhhhhhhhhhhhhhh */
-
-        .leftFormdiv{
-            background: #50afea;
-            border: 1px solid #eeeeee;
-            border-radius: 1rem;
-            color: #fff;
-            height: 80vh;
-            width: 28vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .leftFormdiv li{
-            list-style: none;
-            font-size: x-large;
-        }
-        .rightFormdiv{
-            background: #fbfcfc !important;
-            color: #040404 !important;
-            border: 1px solid #eeeeee;
-            border-radius: 1rem;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 27vw;
-        }
-        
-        #buttonContact{
-            height: 5vh;
-            width: 24vw;
-            border: #1DA1F2;
-            margin-top: 0.5rem;
-            padding: 0.6rem 1.25rem;
-            background-color: none;
-            color: #040404;
-            border: 1px solid #2d9aed;
-            border-radius: 0.3125rem;
-            cursor: pointer;
-            
-        }
-        .contact-form #buttonContact:hover {
-            background-color: #2d9aed;
-            color: #040404;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -123,7 +16,10 @@
     <header id="header">
         <nav id="nav">
             <div id="logo">
-                <img src="../image/Vector.png" style="height: 2rem; width: 2rem;" alt="logojpg">
+                <img class="logo" src="../image/logo-listoGo.png" alt="logojpg">
+                <button id="berger-menu-x"><i class="fa-solid fa-xmark"></i>
+                </button>
+                <button id="berger-menu-y" type="button"><i class="fa-solid fa-bars"></i></button>
             </div>
             <div id="links-nav">
                 <ul id="links-nav-ul">
@@ -131,11 +27,12 @@
                     <li><a href="propertie.html">Properties</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><button><a href="login.html">logIn</a></button></li>
+                    <li><button class="button-login"><a href="login.html">logIn</a></button></li>
                 </ul>
             </div>
         </nav>
     </header>
+
 
     <!-- end navbar -->
 
@@ -147,7 +44,8 @@
             <div id="header-text">
                 <h1>Find your best <br> Real Estate</h1>
                 <p id="h1-home">Always upto date with our latest News and Articles</p>
-                <button style="height: 3rem;width: 11rem;">Contact Us</button>
+                <button class="button-login">Contact Us</button>
+
             </div>
             <div>
             </div>
@@ -169,21 +67,22 @@
                 <div>
                     <ul>
                         <li>
-                            <h3 style="font-size: 16px;">Address: 198 West 21th Street,<br>
+                            <h3 style="font-size: 16px;">Address:   198 West 21th Street,<br>
                                  Suite 721 New York NY 10016</h3>
                         </li>
                         <li>
-                            <h3 style="font-size: 20px;">Phone: + 1235 2355 98</h3>
+                            <h3 style="font-size: 20px;">Phone:   + 1235 2355 98</h3>
                         </li>
                         <li>
-                            <h3 style="font-size: 20px;">Email: info@yoursite.com</h3>
+                            <h3 style="font-size: 20px;">Email:   info@yoursite.com</h3>
                         </li>
                     </ul>
                 </div>
                 <div id="Social-Media">
-                    <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#facebook"><img src="/image/Facebook - Original.png" alt="Facebook"></a>
+                    <a href="#x-twitter"><img src="/image/Twitter - Original.png" alt="Twitter"></a>
+                    <a href="#instagram"><img src="/image/Instagram - Original.png" alt="Instagram"></a>
+                    <a href="#linkdin"><img src="/image/LinkedIn - Original.png" alt="LinkedIn"></a>
                 </div>
             </div>
             <!-- leftFormdiv -->
@@ -210,64 +109,68 @@
     </section>
     <!-- end form section -->
 
-<!-- footer section -->
+ <!-- footer section -->
     <!-- start footer section -->
-    <footer id="footer" class="footer-section"> 
+    <footer id="footer" class="footer-section">
         <!-- left footer Sided -->
         <div class="leftfooterSided">
-                <img src="../image/Vector.png" alt="logo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. 
-                </p>
+            <img src="/image/logo-listoGo.png" alt="logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+            </p>
             <!-- Social Media links -->
             <div id="Social-Media">
-                    <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#linkdin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#facebook"><img src="/image/Facebook - Original.png" alt="Facebook"></a>
+                <a href="#x-twitter"><img src="/image/Twitter - Original.png" alt="Twitter"></a>
+                <a href="#instagram"><img src="/image/Instagram - Original.png" alt="Instagram"></a>
+                <a href="#linkdin"><img src="/image/LinkedIn - Original.png" alt="LinkedIn"></a>
             </div>
+            <p>© 2024.. All rights reserved.</p>
         </div>
         <!-- end left footer Sided -->
-    
+
         <!-- start medll footer Sided -->
-    
-       <div class="medllfooterSided-left">
-                        <h3>Take a tour</h3>
-                <ul>
-                    <li>Features</li>
-                    <li>Partners</li>
-                    <li>Pricing</li>
-                    <li>Product</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-    
+
+        <div class="medllfooterSided-left">
+            <h3>Take a tour</h3>
+            <ul>
+                <li>Features</li>
+                <li>Partners</li>
+                <li>Pricing</li>
+                <li>Product</li>
+                <li>Support</li>
+            </ul>
+        </div>
+
         <div class="medllfooterSided-right">
             <h3>Our Company</h3>
-                <ul>
-                    <li>Our Company</li>
-                    <li>About Us</li>
-                    <li>Agents</li>
-                    <li>Blog</li>
-                    <li>Media</li>
-                    <li>Contact Us</li>
-                </ul>
-        </div> 
+            <ul>
+                <li>Our Company</li>
+                <li>About Us</li>
+                <li>Agents</li>
+                <li>Blog</li>
+                <li>Media</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
         <!-- end medll footer Sided -->
         <!-- start right footer Sided -->
         <div class="rightfooterSided">
-                <h3>Subscribe</h3>
-                <form class ="footerform" action="" >
-                  <div class="email" style="display: flex;flex-direction: row;">
+            <h3>Subscribe</h3>
+            <p>Subscribe to get latest property, blog news from us</p>
+            <form class="footerform" action="">
+                <div class="email" style="display: flex;flex-direction: row;">
                     <input type="email" placeholder="Email">
-                  </div>
-                </form>
+                </div>
+            </form>
         </div>
         <!-- end right footer Sided -->
-    
-        </footer>
-        <!--end footer section-->
+
+    </footer>
+    <!--end footer section-->
+
+    <script src="script/script.js"></script>
 
 </body>
 

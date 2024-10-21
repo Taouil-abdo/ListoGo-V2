@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet"
-        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -15,7 +15,10 @@
     <header id="header">
         <nav id="nav">
             <div id="logo">
-                <img src="../image/Vector.png" style="height: 2rem; width: 2rem;" alt="logojpg">
+                <img class="logo" src="../image/logo-listoGo.png" alt="logojpg">
+                <button id="berger-menu-x"><i class="fa-solid fa-xmark"></i>
+                </button>
+                <button id="berger-menu-y" type="button"><i class="fa-solid fa-bars"></i></button>
             </div>
             <div id="links-nav">
                 <ul id="links-nav-ul">
@@ -23,7 +26,7 @@
                     <li><a href="pages/propertie.html">Properties</a></li>
                     <li><a href="pages/blog.html">Blog</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
-                    <li><button><a href="pages/login.html">logIn</a></button></li>
+                    <li><button class="button-login"><a href="pages/login.html">logIn</a></button></li>
                 </ul>
             </div>
         </nav>
@@ -40,9 +43,7 @@
                 <div class="hero-buttons">
                     <div class="button-select-div">
                         <button id="rent" class="hero-section-buttons">Rent</button>
-
                         <button id="buy" class="hero-section-buttons">Buy</button>
-
                         <button id="sell" class="hero-section-buttons">Sell</button>
                     </div>
 
@@ -69,23 +70,26 @@
                                 <option value="property3">property1</option>
                                 <option value="property4">property1</option>
                             </select>
+
                         </div>
-                        <div id="Price-Range" class="location-part">
-                            <label class="selecters-label" for="Price-Range-S">Price Range</label>
-                            <select class="location-select" placeholder="select Your City" class="selecters"
-                                id="Price-Range-select" name="Price-Range-S">
-                                <option>Choose Price Range</option>
-                                <option value="spain">spain</option>
-                                <option value="uk">Uk</option>
-                                <option value="fransh">Fransh</option>
-                            </select>
-                        </div>
-                        <div>
-                            ICONE
+                        <div class="search-select">
+                            <div id="Price-Range" class="location-part">
+                                <label class="selecters-label" for="Price-Range-S">Price Range</label>
+                                <select class="location-select" style="border-right: none; width: 18rem;"
+                                    placeholder="select Your City" class="selecters" id="Price-Range-select"
+                                    name="Price-Range-S">
+                                    <option>Choose Price Range</option>
+                                    <option value="spain">spain</option>
+                                    <option value="uk">Uk</option>
+                                    <option value="fransh">Fransh</option>
+                                </select>
+                            </div>
+                            <div class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -97,20 +101,20 @@
             <h3 style="font-size: x-large;">We are available in many <br>
                 well-known countries</h3>
             <div class="contry-images">
-                <div>
-                    <img class="images" src="image/usa.png" alt="la tourefele">
+                <div class="images">
+                    <img src="image/usa.png" alt="la tourefele">
                     <h3 id="#h1-home" class="text-image">USA</h3>
                 </div>
-                <div>
-                    <img class="images" src="image/franceimg.png" alt="la tourefele">
+                <div class="images">
+                    <img src="image/franceimg.png" alt="la tourefele">
                     <h3 class="text-image">France</h3>
                 </div>
-                <div>
-                    <img class="images" src="image/spain.png" alt="la tourefele">
+                <div class="images">
+                    <img src="image/spain.png" alt="la tourefele">
                     <h3 class="text-image">spain</h3>
                 </div>
-                <div>
-                    <img class="images" src="image/uk.png" alt="la tourefele">
+                <div class="images">
+                    <img src="image/uk.png" alt="la tourefele">
                     <h3 class="text-image">Uk</h3>
                 </div>
             </div>
@@ -119,125 +123,86 @@
     <!-- end section hero-->
 
     <!-- /* start Recently Added section */ -->
-    <section id="recently-add-section">
-        <div class="recently-add-div">
+    <section id="section-recently-add">
+        <div class="div-recently-add">
             <h3 style="font-size: x-large;">Recently Added</h3>
-            <div class="cart-container">
-
+            <div class="card-container">
                 <!-- cart 1 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (1).png" alt="la tourefele">
+                <div class="card">
+                    <div class="">
+                        <img src="image/Rectangle 7 (1).png" alt="la tourefele">
                     </div>
-                    <div class="div-cart-text">
+                    <div class="card-text">
                         <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
                             Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
                         </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
+                            <button class="price-button">$45,545</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart 2 -->
+                <div class="card">
+                    <div class="">
+                        <img src="image/Rectangle 7 (2).png" alt="la tourefele">
+                    </div>
+                    <div class="card-text">
+                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
+                            Crows Nest</h2>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
                 </div>
                 <!-- cart 3 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (2).png" alt="la tourefele">
+                <div class="card">
+                    <div class="">
+                        <img src="image/Rectangle 7 (3).png" alt="la tourefele">
                     </div>
-                    <div class="div-cart-text">
+                    <div class="card-text">
                         <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
                             Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
                         </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
                 </div>
-                <!-- cart 3 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (3).png" alt="la tourefele">
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="">
+                        <img src="image/Rectangle 7 (4).png" alt="la tourefele">
                     </div>
-                    <div class="div-cart-text">
+                    <div class="card-text">
                         <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
                             Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
+                        <div class="card-main-text">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
                         </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
-                            <button class="price-button">$45,545</button>
-                        </div>
-                    </div>
-                </div><!-- cart 3 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (4).png" alt="la tourefele">
-                    </div>
-                    <div class="div-cart-text">
-                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
-                            Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
-                        </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
-                            <button class="price-button">$45,545</button>
-                        </div>
-                    </div>
-                </div><!-- cart 3 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (5).png" alt="la tourefele">
-                    </div>
-                    <div class="div-cart-text">
-                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
-                            Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
-                        </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
-                            <button class="price-button">$45,545</button>
-                        </div>
-                    </div>
-                </div><!-- cart 3 -->
-                <div class="cart">
-                    <div class="cart-recently-add">
-                        <img class="cart-recently-add" src="image/Rectangle 7 (1).png" alt="la tourefele">
-                    </div>
-                    <div class="div-cart-text">
-                        <h2 style="font-size:2.5rem ;">103/143 West Street,<br>
-                            Crows Nest</h2>
-                        <div style="display: flex; gap: 10px;">
-                            <span style="font-size: 17px;color: gray;">10 Bedroom</span>
-                            <span style="font-size: 17px;color: gray;">150 M</span>
-                            <span style="font-size: 17px;color: gray;">2 Garage</span>
-                        </div>
-                        <div class="div-cart-text1" style="display: flex;gap:15px;">
-                            <span style="font-size: 13px;color: gray;">Posted by X Builder</span>
+                        <div class="card-footer-textbtn" style="display: flex;gap:15px;">
+                            <p>Posted by X Builder</p>
                             <button class="price-button">$45,545</button>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </section>
@@ -251,7 +216,7 @@
             <div id="header-text">
                 <h1>Find your best <br> Real Estate</h1>
                 <p id="h1-home">Always upto date with our latest News and Articles</p>
-                <button style="height: 3rem;width: 11rem;">Contact Us</button>
+                <button class="button-login">Contact Us</button>
             </div>
             <div>
             </div>
@@ -265,18 +230,19 @@
     <footer id="footer" class="footer-section">
         <!-- left footer Sided -->
         <div class="leftfooterSided">
-            <img src="image/Vector.png" alt="logo">
+            <img src="image/logo-listoGo.png" alt="logo">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
                 sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
             </p>
             <!-- Social Media links -->
             <div id="Social-Media">
-                <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#linkdin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#facebook"><img src="/image/Facebook - Original.png" alt="Facebook"></a>
+                <a href="#x-twitter"><img src="/image/Twitter - Original.png" alt="Twitter"></a>
+                <a href="#instagram"><img src="/image/Instagram - Original.png" alt="Instagram"></a>
+                <a href="#linkdin"><img src="/image/LinkedIn - Original.png" alt="LinkedIn"></a>
             </div>
+            <p>© 2024.. All rights reserved.</p>
         </div>
         <!-- end left footer Sided -->
 
@@ -308,6 +274,7 @@
         <!-- start right footer Sided -->
         <div class="rightfooterSided">
             <h3>Subscribe</h3>
+            <p>Subscribe to get latest property, blog news from us</p>
             <form class="footerform" action="">
                 <div class="email" style="display: flex;flex-direction: row;">
                     <input type="email" placeholder="Email">
@@ -317,9 +284,8 @@
         <!-- end right footer Sided -->
 
     </footer>
-    <!--end footer section-->
-
-
+    
+    <script src="script/script.js"></script>
 </body>
 
 </html>

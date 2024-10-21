@@ -1,29 +1,41 @@
 /* navbar Code */
-html{
+html {
     font-size: 10px;
 }
+
 * {
     margin: 0px;
     padding: 0px;
 }
-h1{
+
+h1 {
     font-size: 5rem;
 }
+
+p {
+    color: rgb(141, 141, 141);
+    font-size: medium;
+}
+
 #header {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 254, 254);
+    margin: 0px;
+    box-shadow: 0.1px rgb(177, 219, 247);
+
 }
 
 #nav {
-    margin: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-items: center;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
+    font-size: medium;
+
 }
 
-#links-nav #links-nav-ul {
+#links-nav-ul {
     display: flex;
-    justify-items: center;
     align-items: center;
     gap: 4rem;
     text-decoration: none;
@@ -38,12 +50,68 @@ a {
 
 }
 
-button {
-    height: 2rem;
-    width: 5rem;
+.button-login {
+
     border: 1px solid #1DA1F2;
     border-radius: 10px;
     background-color: rgb(253, 253, 253);
+    height: 3rem;
+    width: 9rem;
+}
+
+.button-login:hover {
+    box-shadow: 1px #1DA1F2;
+}
+
+.logo {
+    height: 4rem;
+    width: 6rem;
+}
+
+
+#berger-menu-y,
+#berger-menu-x {
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    background: rgb(127, 198, 245);
+}
+
+#berger-menu-x {
+    display: none;
+}
+
+#berger-menu-y {
+    display: none;
+}
+
+/* media-queris */
+@media screen and (max-width : 655px) {
+    #nav {
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        padding-top: 2rem;
+        gap: 6rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #links-nav-ul {
+        flex-direction: column;
+        display: none;
+
+    }
+
+    #logo {
+        display: flex;
+        gap: 28rem;
+    }
+
+    #berger-menu-y {
+        display: inline !important;
+    }
 }
 
 /* end header navebar  */
@@ -51,36 +119,36 @@ button {
 /* hero section  */
 
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
-
-
 #div-hero-section {
-    background-image: url(../image/Banner\ Image.png);
+    background-image: url(../image/imgHome.png);
     position: relative;
+    background-repeat: no-repeat;
     height: 50rem;
-    width: 90vw;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 5rem;
     -webkit-border-radius: 2rem;
 }
 
 #header-text {
     display: flex;
     flex-direction: column;
-    padding-left: 3rem;
-    padding-bottom: 5rem;
-    margin-left: 7rem;
+    padding-left: 2rem;
+    margin-left: 2rem;
     gap: 20px;
 }
-.button-select{
+
+.button-select {
     margin-left: 5rem;
 }
 
@@ -88,16 +156,19 @@ button {
     font-size: 1.5rem;
 }
 
-/* hero section  */
+/* .hero-section */
+.hero-section-buttons {
+    border: none;
+    width: 7rem;
+    height: 3.5rem;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
-
- /* .hero-section */
- .hero-section-buttons {
-    border-color: aliceblue;
-    width: 6vw;
-    height: 6vh;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+#sell,
+#buy {
+    background: none !important;
 
 }
 
@@ -105,13 +176,13 @@ button {
     position: relative;
 }
 
+
 #buy-info-id {
-    background: rgb(251, 250, 250);
-    opacity: 0.8;
+    background: rgb(251, 250, 250, 0.9);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 60vw;
+    width: 76%;
     border-radius: 0rem 1rem 1rem 1rem;
     margin-left: 50px;
 
@@ -120,11 +191,10 @@ button {
 .section-buttons {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 5rem;
-    height: 15vh;
     margin-left: 2.4rem;
-
+    padding: 1.8rem;
 }
 
 .location-part {
@@ -137,30 +207,124 @@ button {
 
 }
 
+
 .selecters-label {
     font-size: 1.5em;
 }
 
 .location-select {
     border: none;
-    height: 10vh;
-    width: 13vw;
+    width: 24rem;
+    padding-top: 2.5rem;
     background: none;
     color: rgb(121, 121, 121);
-    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     border-right: 0.4px solid gray;
+    outline: none;
+
 }
+
+#Price-Range {
+    border-right: none;
+}
+
+.search-select {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    height: 5rem;
+    width: 5rem;
+    background: #1daeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border: none;
+    border-radius: 0.9rem;
+}
+
+@media screen and (max-width : 855px) {
+
+    .section-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0rem;
+
+
+    }
+
+    .location-select {
+        width: 24rem;
+        background: none;
+        color: rgb(71, 71, 71);
+        outline: none;
+
+    }
+
+    #header-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        margin-left: 2rem;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .button-select {
+        margin-left: 0rem;
+    }
+
+    .button-select-div {
+        padding-left: 4rem;
+    }
+
+    .hero-section-buttons {
+        border-color: aliceblue;
+        width: 7rem;
+        height: 4rem;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #buy-info-id {
+        background: rgb(251, 250, 250);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 37rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+        margin-left: 26px;
+    }
+
+    #div-hero-section {
+
+        background-repeat: no-repeat;
+        /* height: 50rem; */
+        width: 94%;
+        border-top-right-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+    }
+
+
+}
+
+/* hero section  */
 
 /* contries section */
 
 .countries-div {
     display: flex;
-    flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
+    align-items: center;
     padding-top: 5rem;
+    flex-direction: column;
 }
 
 .contry-images {
@@ -170,10 +334,11 @@ button {
     justify-content: center;
 }
 
+
 .text-image {
-    position: relative;
+    position: absolute;
     bottom: 36rem;
-    left: 2rem;
+    left: 12rem;
     font-size: x-large;
 }
 
@@ -185,25 +350,27 @@ button {
 /* contries section */
 
 /* start Recently Added section */
-.cart-recently-add {
-    
+
+
+
+
+
+
+
+/*recently add*/
+
+
+.div-recently-add {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-}
-
-/* .recently-add-div {} */
-
-
-
-.recently-add-div {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 6rem;
+    padding-top: 5rem;
+    /* background: #a6a6a6; */
 }
 
-.cart-container {
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -211,92 +378,407 @@ button {
     gap: 4rem;
 }
 
-.div-cart-text {
+.card {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.cart {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 38vh;
-    width: 38vw;
-    border: 0.1em solid #DCDCEB;
+    gap: 1rem;
+    width: 40rem;
+    padding: 1rem;
+    border: 1px solid #1DA1F2;
     border-radius: 3rem;
-    gap: 2rem;
-
 }
-.cart:hover{
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-footer-textbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-main-text {
+    display: flex;
+    gap: 2rem;
+}
+
+.cart:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.price-button{
+
+.price-button {
     height: 4rem;
     width: 9rem;
+    border: 1px solid #1DA1F2;
+    border-radius: 10px;
+    background-color: rgb(173, 173, 173);
 }
+
+@media screen and (max-width:666px) {
+    .card {
+        flex-direction: column;
+        width: 20rem;
+
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .card-text {
+
+        gap: 1rem;
+    }
+
+}
+
 
 /* end Recently Added section */
 
 
 /* blog */
 
-.blog{
+   
+.blog {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: large;
+    margin-top: 7rem;
+    gap: 2rem;
 }
+
+.blog-section {
+
+    
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.div-cart-blog{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.cart-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 35rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(47, 189, 255);
+    border-radius: 3rem;
+    margin-top: 72px;
+    padding: 10px;
+}
+
+
 
 
 
 /* end blog */
 
+/* login  */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 500px;
+    height: 400px;
+    background: white;
+    border-radius: 2px;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 0 0 2 0px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form {
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.forgot {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #2691d9;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.users_signup {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.users_signup a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.users_signup a:hover {
+    text-decoration: underline;
+}
+
+.body{
+background-image: url(/image/login2.png);
+/* background-size: 100%; */
+background-repeat: no-repeat;
+}
+
+/* end login  */
 
 /* footer */
-.footer-section{
+.footer-section {
     margin-top: 11rem;
     height: 27rem;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     font-size: medium;
+    gap: 5rem;
 }
-.leftfooterSided{
+
+.leftfooterSided {
 
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    gap: 1rem;
+    gap: 4rem;
     padding: 1rem;
 
 }
-.rightfooterSided{
 
-display: flex;
-flex-direction: column;
-gap: 2rem;
+.rightfooterSided {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.Social-Media{
-   font-size: larger;
+.Social-Media {
+    font-size: larger;
 }
-li{
+
+li {
     list-style: none;
     padding-top: 2rem;
 }
-.footerform ,input{
+
+.footerform,
+input {
     height: 3rem;
     width: 20rem;
     border: 1px solid gray;
     border-radius: 10px;
 }
-p{
-color: rgb(141, 141, 141);
+
+p {
+    color: rgb(141, 141, 141);
 }
-   
+
+@media screen and (max-width: 995px) {
+    .recently-add-title {
+        display: flex;
+        gap: 20rem
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .recently-add-title {
+        display: flex;
+        gap: 19rem
+    }
+}
+
 /* end footer */
+
+/* end footer */
+
+/* pages contact */
+#form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 8rem;
+
+}
+
+.formSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+#leftFormdiv {
+    width: 45%;
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Information Styles */
+#leftFormDiv ul {
+    list-style-type: none;
+}
+
+#socialMedia img {
+    width: 1rem;
+    margin-right: 0.625rem;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-top: 2rem;
+    font-size: medium;
+}
+
+form input[type="text"],
+form textarea {
+    width: 23vw;
+    height: 3.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 1rem;
+    background: #f2f2f2;
+}
+
+/* hhhhhhhhhhhhhhhh */
+
+.leftFormdiv{
+    background: #50afea;
+    border: 1px solid #eeeeee;
+    border-radius: 1rem;
+    color: #fff;
+    height: 80vh;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.leftFormdiv li{
+    list-style: none;
+    font-size: x-large;
+}
+.rightFormdiv{
+    background: #fbfcfc !important;
+    color: #040404 !important;
+    border: 1px solid #eeeeee;
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 27vw;
+}
+
+#buttonContact{
+    height: 5vh;
+    width: 24vw;
+    border: #1DA1F2;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    background-color: none;
+    color: #040404;
+    border: 1px solid #2d9aed;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    
+}
+.contact-form #buttonContact:hover {
+    background-color: #2d9aed;
+    color: #040404;
+}
+/* end page conatct */
